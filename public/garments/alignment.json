@@ -1,0 +1,95 @@
+{
+  "rod_frac": 0.068,
+  "images": {
+    "black-coat-back.png": {
+      "hook_top_frac": 0.0182,
+      "rod_frac": 0.0453,
+      "nudge_frac": 0.0227
+    },
+    "black-coat-side.png": {
+      "hook_top_frac": 0.0091,
+      "rod_frac": 0.0554,
+      "nudge_frac": 0.0126
+    },
+    "black-coat.png": {
+      "hook_top_frac": 0.0176,
+      "rod_frac": 0.0449,
+      "nudge_frac": 0.0231
+    },
+    "cream-sweater-back.png": {
+      "hook_top_frac": 0.0228,
+      "rod_frac": 0.0572,
+      "nudge_frac": 0.0108
+    },
+    "cream-sweater-side.png": {
+      "hook_top_frac": 0.0143,
+      "rod_frac": 0.0788,
+      "nudge_frac": -0.0108
+    },
+    "cream-sweater.png": {
+      "hook_top_frac": 0.0247,
+      "rod_frac": 0.0596,
+      "nudge_frac": 0.0084
+    },
+    "green-jacket-back.png": {
+      "hook_top_frac": 0.041,
+      "rod_frac": 0.0718,
+      "nudge_frac": -0.0038
+    },
+    "green-jacket-side.png": {
+      "hook_top_frac": 0.0098,
+      "rod_frac": 0.0619,
+      "nudge_frac": 0.0061
+    },
+    "green-jacket.png": {
+      "hook_top_frac": 0.041,
+      "rod_frac": 0.0706,
+      "nudge_frac": -0.0026
+    },
+    "grey-hoodie-back.png": {
+      "hook_top_frac": 0.0358,
+      "rod_frac": 0.0714,
+      "nudge_frac": -0.0034
+    },
+    "grey-hoodie-side.png": {
+      "hook_top_frac": 0.0065,
+      "rod_frac": 0.0432,
+      "nudge_frac": 0.0248
+    },
+    "grey-hoodie.png": {
+      "hook_top_frac": 0.0365,
+      "rod_frac": 0.0713,
+      "nudge_frac": -0.0033
+    },
+    "navy-puffer-back.png": {
+      "hook_top_frac": 0.0742,
+      "rod_frac": 0.1041,
+      "nudge_frac": -0.0361
+    },
+    "navy-puffer-side.png": {
+      "hook_top_frac": 0.0143,
+      "rod_frac": 0.0654,
+      "nudge_frac": 0.0026
+    },
+    "navy-puffer.png": {
+      "hook_top_frac": 0.0742,
+      "rod_frac": 0.1029,
+      "nudge_frac": -0.0349
+    },
+    "white-hoodie-back.png": {
+      "hook_top_frac": 0.0625,
+      "rod_frac": 0.099,
+      "nudge_frac": -0.031
+    },
+    "white-hoodie-side.png": {
+      "hook_top_frac": 0.0221,
+      "rod_frac": 0.0629,
+      "nudge_frac": 0.0051
+    },
+    "white-hoodie.png": {
+      "hook_top_frac": 0.0638,
+      "rod_frac": 0.0948,
+      "nudge_frac": -0.0268
+    }
+  }
+}

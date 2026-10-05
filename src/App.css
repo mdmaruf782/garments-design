@@ -1,0 +1,121 @@
+#root {
+  width: 100%;
+}
+
+/* garment sizing: big, but all six still fit in one row on desktop */
+:root {
+  --gw: clamp(150px, 14.6vw, 232px);
+}
+
+.garment-w {
+  width: var(--gw);
+}
+
+/* the rail sits inside the hook curve — measured against the live page (9px above the resting point) */
+.rail-line {
+  top: calc(var(--gw) * 0.083);
+}
+
+.rail-cap {
+  top: calc(var(--gw) * 0.083 - 4px);
+}
+
+.font-display {
+  font-family: 'Marcellus', 'Times New Roman', serif;
+}
+
+.font-body {
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* garments swaying gently on the rail */
+@keyframes sway {
+  from {
+    transform: rotateZ(-1.3deg);
+  }
+  to {
+    transform: rotateZ(1.3deg);
+  }
+}
+
+.sway {
+  animation: sway 3.6s ease-in-out infinite alternate;
+  transform-origin: 50% 0%;
+  will-change: transform;
+}
+
+/* 3D helpers for the 360° rotation */
+.persp {
+  perspective: 1400px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+/* card-flip: front/side/back faces of each garment */
+.flip-inner {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.75s cubic-bezier(0.33, 1, 0.68, 1);
+  will-change: transform;
+}
+
+.flip-face {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  display: block;
+}
+
+.flip-back-face {
+  position: absolute;
+  inset: 0;
+}
+
+.flip-side-face {
+  position: absolute;
+  inset: 0;
+}
+
+/* hide the horizontal scrollbar */
+.rail-scroll {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.rail-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* product info fade when selection changes */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeUp 0.45s ease-out both;
+}
+
+/* detail modal entrance */
+@keyframes modalIn {
+  from {
+    opacity: 0;
+    transform: translateY(14px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.modal-in {
+  animation: modalIn 0.35s cubic-bezier(0.33, 1, 0.68, 1) both;
+}
