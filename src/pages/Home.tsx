@@ -290,24 +290,17 @@ export default function Home() {
       {/* ── Product detail modal ── */}
       {dg && (
         <div
-          className="fixed inset-0 z-50 bg-[#1a1a17]/35 backdrop-blur-[2px] flex items-center justify-center p-4"
+          className="fixed inset-0 z-50 bg-[#1a1a17]/35 backdrop-blur-[2px] flex items-center justify-center p-3 sm:p-4"
           onClick={() => setDetail(null)}
         >
           <div
-            className="modal-in relative bg-[#f4f1e8] w-full max-w-3xl grid md:grid-cols-2 shadow-2xl"
+            className="modal-in relative bg-[#f4f1e8] w-full max-w-3xl shadow-2xl"
             onClick={(e) => e.stopPropagation()}
           >
-            <button
-              onClick={() => setDetail(null)}
-              aria-label="Close"
-              className="absolute top-3 right-4 text-xl text-[#6d6a5e] hover:text-[#1a1a17] transition-colors z-10"
-            >
-              ✕
-            </button>
-
+            <div className="grid md:grid-cols-2 max-h-[88dvh] overflow-y-auto">
             {/* rotating garment */}
-            <div className="flex items-center justify-center py-8 bg-[#edeae0]">
-              <div className="persp w-[220px]">
+            <div className="flex items-center justify-center py-4 md:py-8 bg-[#edeae0]">
+              <div className="persp w-[150px] md:w-[220px]">
                 <div
                   className="flip-inner"
                   style={
@@ -324,7 +317,7 @@ export default function Home() {
             </div>
 
             {/* info */}
-            <div className="p-8 flex flex-col justify-center gap-5">
+            <div className="p-5 md:p-8 flex flex-col justify-center gap-4 md:gap-5">
               <div>
                 <h2 className="font-display text-2xl tracking-[0.14em] uppercase">{dg.name}</h2>
                 <p className="text-[11px] tracking-[0.24em] uppercase text-[#8b8778] mt-1">{dg.detail}</p>
@@ -408,6 +401,16 @@ export default function Home() {
                 {added ? 'Added to cart ✓' : 'Add to cart'}
               </button>
             </div>
+            </div>
+
+            <button
+              onClick={() => setDetail(null)}
+              aria-label="Close"
+              style={{ transform: 'translateZ(0)' }}
+              className="absolute top-2 right-2 z-30 w-9 h-9 flex items-center justify-center bg-[#f4f1e8] border border-[#c9c4b2] text-sm text-[#6d6a5e] hover:text-[#1a1a17] hover:border-[#1a1a17] transition-colors"
+            >
+              ✕
+            </button>
           </div>
         </div>
       )}
